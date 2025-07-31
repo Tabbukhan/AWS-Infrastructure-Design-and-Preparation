@@ -2,6 +2,9 @@
 
 This project demonstrates how to integrate **Orca Security**, a comprehensive cloud security platform, with **AWS CodePipeline** to enable security scanning throughout the CI/CD process.
 
+    
+
+
 ---
 
 ## 🔍 What is Orca Security?
