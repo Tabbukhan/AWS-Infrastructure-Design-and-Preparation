@@ -1,9 +1,32 @@
-# 🛡️ Orca Security Integration with AWS CodePipeline
+# 🔐 Security Scanning with Orca Security & AWS CodePipeline
+
+## 🔎 Security Scanning Overview
+
+Security scanning combines **static** and **dynamic** approaches to identify vulnerabilities throughout the application lifecycle:
+
+- **Static Scanning**: Integrates into CI/CD pipelines to analyze code before deployment.
+- **Dynamic Scanning**: Continuously probes live applications to simulate real-world threats.
+
+Both approaches prioritize **precision** and **efficiency**, aiming to minimize false positives and provide actionable insights. This comprehensive strategy ensures protection from **development** through **production** environments.
+
+---
+
+## 🧱 Static Code Security Scanning
+
+Static scanning is a key capability of the **"shift-left"** security model—detecting flaws early in the development process, long before release or promotion across environments.
+
+### ⚠️ Challenges in Static Scanning:
+
+- **Complex Codebases**: Most applications rely more on dependencies and open-source libraries than on original code, requiring deep analysis of all direct and transitive dependencies.
+- **Constantly Evolving Threats**: The vulnerability landscape is ever-changing, requiring scanning tools to continuously update and compare against current databases.
+- **Developer Integration**: Tooling must be seamlessly integrated into development workflows and CI/CD pipelines without slowing down build times.
+- **False Positives**: Maintaining developer confidence requires accurate and relevant alerts that avoid unnecessary noise.
+
+---
+
+## 🛡️ Orca Security Integration with AWS CodePipeline
 
 This project demonstrates how to integrate **Orca Security**, a comprehensive cloud security platform, with **AWS CodePipeline** to enable security scanning throughout the CI/CD process.
-
-    
-
 
 ---
 
@@ -11,11 +34,11 @@ This project demonstrates how to integrate **Orca Security**, a comprehensive cl
 
 [Orca Security](https://orca.security/) is a cloud-native security tool that provides deep, agentless security across your entire software development lifecycle (SDLC). It enables:
 
-- Vulnerability and misconfiguration detection
-- Infrastructure as Code (IaC) scanning
-- Container image and codebase analysis
-- Software Composition Analysis (SCA)
-- DevSecOps policy enforcement and reporting
+- Vulnerability and misconfiguration detection  
+- Infrastructure as Code (IaC) scanning  
+- Container image and codebase analysis  
+- Software Composition Analysis (SCA)  
+- DevSecOps policy enforcement and reporting  
 
 ---
 
@@ -23,9 +46,9 @@ This project demonstrates how to integrate **Orca Security**, a comprehensive cl
 
 [AWS CodePipeline](https://aws.amazon.com/codepipeline/) is a fully managed CI/CD service that automates the build, test, and deploy phases of your release process. With CodePipeline, you can:
 
-- Define pipelines as code
-- Automate software delivery workflows
-- Integrate third-party tools like Orca with ease
+- Define pipelines as code  
+- Automate software delivery workflows  
+- Integrate third-party tools like Orca with ease  
 
 ---
 
@@ -33,9 +56,9 @@ This project demonstrates how to integrate **Orca Security**, a comprehensive cl
 
 By integrating Orca Security into AWS CodePipeline, you can shift security left by adding scanning steps into your release lifecycle. The benefits include:
 
-- Early detection of vulnerabilities
-- Continuous compliance checks
-- Scalable and automated security enforcement
+- Early detection of vulnerabilities  
+- Continuous compliance checks  
+- Scalable and automated security enforcement  
 
 ---
 
@@ -52,3 +75,27 @@ By integrating Orca Security into AWS CodePipeline, you can shift security left 
 
 **Example flow:**
 
+Source ➝ Build ➝ Orca Security Scan ➝ Deploy
+
+
+
+---
+
+## 📌 Notes
+
+- Orca supports scanning a variety of artifacts including IaC files, Docker images, and source code.
+- Integration can be extended to other tools like Jenkins, GitHub Actions, and GitLab CI/CD as needed.
+- You can define policies in Orca to automatically fail pipeline stages when critical issues are found.
+
+---
+
+## 📞 Support
+
+For support or documentation, visit the [Orca Documentation Portal](https://docs.orca.security/) or reach out to the Orca Security team via your account dashboard.
+
+---
+
+## 🧑‍💻 Author
+
+**Tabasum Khan**  
+DevOps Engineer | Cloud Security Enthusiast  
